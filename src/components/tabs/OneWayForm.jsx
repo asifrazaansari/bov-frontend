@@ -26,6 +26,12 @@ const OneWayForm = () => {
           className="w-full px-4 py-2 rounded-lg  border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
+
+      <div className="w-full md:w-1/4 flex justify-center mt-10 relative">
+        <button className="w-1/2 md:w-1/2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg focus:outline-none hover:bg-blue-600 transition duration-300 -mb-6">
+          Search
+        </button>
+      </div>
     </form>
   );
 };
