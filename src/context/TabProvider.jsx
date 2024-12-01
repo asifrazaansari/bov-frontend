@@ -2,17 +2,16 @@ import React, { useState } from 'react';
 import TabContext from './TabContext.js';
 
 
-
-const TabContextProvider = ({children}) => {
+const TabProvider = ({children}) => {
 
     const [activeTab, setActiveTab] = useState('one-way')
 
     return (
-        <TabContext.Provider val={{activeTab, setActiveTab}}>
+        <TabContext.Provider value={{activeTab, setActiveTab}}>
             {children}
         </TabContext.Provider>
     )
     
 }
 
-export default TabContextProvider;
+export default TabProvider;
